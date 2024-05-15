@@ -23261,16 +23261,16 @@ Unchanged: MNKD
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook 13_f_reports.ipynb to html
-[NbConvertApp] Writing 842145 bytes to 13F_biotech_report.html
+[NbConvertApp] Writing 843187 bytes to 13F_report.html
 Modified HTML saved.
-Estimated total height: 3318.75 inches
+Estimated total height: 3321.67 inches
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/var/folders/9k/cf512qgd2957jgvn55wcghqr0000gn/T/ipykernel_18229/1863406826.py:61: DeprecationWarning: The 'text' argument to find()-type methods is deprecated. Use 'string' instead.
+<pre>/var/folders/9k/cf512qgd2957jgvn55wcghqr0000gn/T/ipykernel_18229/2617879724.py:61: DeprecationWarning: The 'text' argument to find()-type methods is deprecated. Use 'string' instead.
   num_text_lines = sum(1 for _ in soup.find_all(text=True))  # Simplistic text line count
 </pre>
 </div>
@@ -23279,7 +23279,7 @@ Estimated total height: 3318.75 inches
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Loading pages (1/6)
-Counting pages (2/6)                                                100%
+Counting pages (2/6)                                               
 Resolving links (4/6)                                                       
 Loading headers and footers (5/6)                                           
 Printing pages (6/6)
@@ -23288,6 +23288,54 @@ Done
 </div>
 </div>
 </div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">CalledProcessError</span>                        Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[34], line 17</span>
+<span class="ansi-green-intense-fg ansi-bold">     15</span> <span style="color: rgb(95,135,135)"># Execute the commands</span>
+<span class="ansi-green-intense-fg ansi-bold">     16</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> cmd <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> commands:
+<span class="ansi-green-fg">---&gt; 17</span>     result <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">subprocess</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">cmd</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">shell</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">check</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">text</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">capture_output</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     18</span>     <span style="color: rgb(0,135,0)">print</span>(result<span style="color: rgb(98,98,98)">.</span>stdout)
+<span class="ansi-green-intense-fg ansi-bold">     19</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result<span style="color: rgb(98,98,98)">.</span>stderr:
+
+File <span class="ansi-green-fg">/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py:571</span>, in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(input, capture_output, timeout, check, *popenargs, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    569</span>     retcode <span style="color: rgb(98,98,98)">=</span> process<span style="color: rgb(98,98,98)">.</span>poll()
+<span class="ansi-green-intense-fg ansi-bold">    570</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> check <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> retcode:
+<span class="ansi-green-fg">--&gt; 571</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> CalledProcessError(retcode, process<span style="color: rgb(98,98,98)">.</span>args,
+<span class="ansi-green-intense-fg ansi-bold">    572</span>                                  output<span style="color: rgb(98,98,98)">=</span>stdout, stderr<span style="color: rgb(98,98,98)">=</span>stderr)
+<span class="ansi-green-intense-fg ansi-bold">    573</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> CompletedProcess(process<span style="color: rgb(98,98,98)">.</span>args, retcode, stdout, stderr)
+
+<span class="ansi-red-fg">CalledProcessError</span>: Command 'cd /Users/ralph/Biotech/biotech-report &amp;&amp; git commit -m "Update HTML report"' returned non-zero exit status 1.</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper">
