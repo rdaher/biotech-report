@@ -15686,7 +15686,7 @@ R2 range: 0.29 to 0.65
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-End of Report - 2024-10-06 06:25:17
+End of Report - 2024-10-06 06:28:36
 </pre>
 </div>
 </div>
@@ -15744,188 +15744,11 @@ End of Report - 2024-10-06 06:25:17
 </div>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Portfolio Input:
-  symbol  start_date    end_date  shares adjusted_start adjusted_end
-0      T  2018-01-01                 400     2018-01-02   2024-09-25
-1     BA  2020-08-09  2023-08-09     430     2020-08-10   2023-08-09
-2   HASI  2020-09-01                 500     2020-09-01   2024-09-25
-3   PAVM  2021-09-08                3000     2021-09-08   2024-09-25
-
-
-First few rows of df_prices_pivot:
-            BA  HASI  PAVM         SPY          T
-Date                                             
-2018-01-02 NaN   NaN   NaN  268.769989  29.108761
-2018-01-03 NaN   NaN   NaN  270.470001  28.436556
-2018-01-04 NaN   NaN   NaN  271.609985  28.700907
-2018-01-05 NaN   NaN   NaN  273.420013  28.806646
-2018-01-08 NaN   NaN   NaN  273.920013  28.889729
-
-Last few rows of df_prices_pivot:
-            BA       HASI  PAVM         SPY          T
-Date                                                  
-2024-09-19 NaN  35.110001  1.65  570.979980  21.360001
-2024-09-20 NaN  34.650002  1.61  568.250000  21.540001
-2024-09-23 NaN  34.889999  1.29  569.669983  21.490000
-2024-09-24 NaN  34.750000  1.28  571.299988  21.590000
-2024-09-25 NaN  33.799999  1.15  570.039978  21.559999
-
-
-First few values of portfolio_value:
-Date
-2018-01-02    11643.504333
-2018-01-03    11374.622345
-2018-01-04    11480.362701
-2018-01-05    11522.658539
-2018-01-08    11555.891418
-dtype: float64
-
-Last few values of portfolio_value:
-Date
-2024-09-19    31049.000478
-2024-09-20    30771.001172
-2024-09-23    29910.999489
-2024-09-24    29850.999975
-2024-09-25    28973.999333
-dtype: float64
-
-
-First few values of portfolio_return:
-Date
-2018-01-03   -0.023093
-2018-01-04    0.009296
-2018-01-05    0.003684
-2018-01-08    0.002884
-2018-01-09   -0.019869
-dtype: float64
-
-Last few values of portfolio_return:
-Date
-2024-09-19   -0.001383
-2024-09-20   -0.008954
-2024-09-23   -0.027948
-2024-09-24   -0.002006
-2024-09-25   -0.029379
-dtype: float64
-
-
-First few values of monthly_portfolio:
-Date
-2018-01-31   -0.028282
-2018-02-28   -0.030708
-2018-03-31   -0.017906
-2018-04-30   -0.082749
-2018-05-31   -0.011621
-Freq: ME, dtype: float64
-
-Last few values of monthly_portfolio:
-Date
-2024-05-31    0.119631
-2024-06-30   -0.120001
-2024-07-31    0.071947
-2024-08-31    0.007508
-2024-09-30    0.077902
-Freq: ME, dtype: float64
-
-
-Portfolio values around 2020-08-09:
-Date
-2020-08-03     8948.640442
-2020-08-04     9066.464996
-2020-08-05     9018.126678
-2020-08-06     9015.105438
-2020-08-07     9069.486237
-2020-08-10    86270.168610
-2020-08-11    86579.769135
-2020-08-12    84557.025604
-2020-08-13    84170.151520
-2020-08-14    85640.865784
-2020-08-17    82982.424316
-2020-08-18    82198.898163
-2020-08-19    81767.975159
-2020-08-20    81883.147430
-2020-08-21    80994.788361
-2020-08-24    85728.609314
-2020-08-25    84167.131042
-2020-08-26    82977.419891
-2020-08-27    83939.231567
-2020-08-28    84669.530029
-2020-08-31    82888.645630
-dtype: float64
-
-Portfolio returns around 2020-08-09:
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">IndexError</span>                                Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[163], line 41</span>
-<span class="ansi-green-intense-fg ansi-bold">     39</span> <span style="color: rgb(0,135,0)">print</span>(portfolio_value<span style="color: rgb(98,98,98)">.</span>loc[problematic_period])
-<span class="ansi-green-intense-fg ansi-bold">     40</span> <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">"</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span style="color: rgb(175,0,0)">Portfolio returns around 2020-08-09:</span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-fg">---&gt; 41</span> <span style="color: rgb(0,135,0)">print</span>(<span class="ansi-yellow-bg">portfolio_return</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">loc</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">problematic_period</span><span class="ansi-yellow-bg">]</span>)
-<span class="ansi-green-intense-fg ansi-bold">     42</span> <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">"</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-intense-fg ansi-bold">     44</span> <span style="color: rgb(95,135,135)"># 7. Calculate daily changes in portfolio composition</span>
-
-File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/pandas/core/indexing.py:1191</span>, in <span class="ansi-cyan-fg">_LocationIndexer.__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1189</span> maybe_callable <span style="color: rgb(98,98,98)">=</span> com<span style="color: rgb(98,98,98)">.</span>apply_if_callable(key, <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>obj)
-<span class="ansi-green-intense-fg ansi-bold">   1190</span> maybe_callable <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_check_deprecated_callable_usage(key, maybe_callable)
-<span class="ansi-green-fg">-&gt; 1191</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_getitem_axis</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">maybe_callable</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/pandas/core/indexing.py:1413</span>, in <span class="ansi-cyan-fg">_LocIndexer._getitem_axis</span><span class="ansi-blue-fg">(self, key, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1411</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_get_slice_axis(key, axis<span style="color: rgb(98,98,98)">=</span>axis)
-<span class="ansi-green-intense-fg ansi-bold">   1412</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> com<span style="color: rgb(98,98,98)">.</span>is_bool_indexer(key):
-<span class="ansi-green-fg">-&gt; 1413</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_getbool_axis</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1414</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> is_list_like_indexer(key):
-<span class="ansi-green-intense-fg ansi-bold">   1415</span>     <span style="color: rgb(95,135,135)"># an iterable multi-selection</span>
-<span class="ansi-green-intense-fg ansi-bold">   1416</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> (<span style="color: rgb(0,135,0)">isinstance</span>(key, <span style="color: rgb(0,135,0)">tuple</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> <span style="color: rgb(0,135,0)">isinstance</span>(labels, MultiIndex)):
-
-File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/pandas/core/indexing.py:1209</span>, in <span class="ansi-cyan-fg">_LocationIndexer._getbool_axis</span><span class="ansi-blue-fg">(self, key, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1205</span> <span style="color: rgb(175,0,255)">@final</span>
-<span class="ansi-green-intense-fg ansi-bold">   1206</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">_getbool_axis</span>(<span style="color: rgb(0,135,0)">self</span>, key, axis: AxisInt):
-<span class="ansi-green-intense-fg ansi-bold">   1207</span>     <span style="color: rgb(95,135,135)"># caller is responsible for ensuring non-None axis</span>
-<span class="ansi-green-intense-fg ansi-bold">   1208</span>     labels <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>obj<span style="color: rgb(98,98,98)">.</span>_get_axis(axis)
-<span class="ansi-green-fg">-&gt; 1209</span>     key <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">check_bool_indexer</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">labels</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1210</span>     inds <span style="color: rgb(98,98,98)">=</span> key<span style="color: rgb(98,98,98)">.</span>nonzero()[<span style="color: rgb(98,98,98)">0</span>]
-<span class="ansi-green-intense-fg ansi-bold">   1211</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>obj<span style="color: rgb(98,98,98)">.</span>_take_with_is_copy(inds, axis<span style="color: rgb(98,98,98)">=</span>axis)
-
-File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/pandas/core/indexing.py:2681</span>, in <span class="ansi-cyan-fg">check_bool_indexer</span><span class="ansi-blue-fg">(index, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2677</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> is_array_like(result):
-<span class="ansi-green-intense-fg ansi-bold">   2678</span>     <span style="color: rgb(95,135,135)"># GH 33924</span>
-<span class="ansi-green-intense-fg ansi-bold">   2679</span>     <span style="color: rgb(95,135,135)"># key may contain nan elements, check_array_indexer needs bool array</span>
-<span class="ansi-green-intense-fg ansi-bold">   2680</span>     result <span style="color: rgb(98,98,98)">=</span> pd_array(result, dtype<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">bool</span>)
-<span class="ansi-green-fg">-&gt; 2681</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">check_array_indexer</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">index</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">result</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/pandas/core/indexers/utils.py:539</span>, in <span class="ansi-cyan-fg">check_array_indexer</span><span class="ansi-blue-fg">(array, indexer)</span>
-<span class="ansi-green-intense-fg ansi-bold">    537</span>     <span style="color: rgb(95,135,135)"># GH26658</span>
-<span class="ansi-green-intense-fg ansi-bold">    538</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">len</span>(indexer) <span style="color: rgb(98,98,98)">!=</span> <span style="color: rgb(0,135,0)">len</span>(array):
-<span class="ansi-green-fg">--&gt; 539</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">IndexError</span>(
-<span class="ansi-green-intense-fg ansi-bold">    540</span>             <span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Boolean index has wrong length: </span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">    541</span>             <span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span><span style="color: rgb(0,135,0)">len</span>(indexer)<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)"> instead of </span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span><span style="color: rgb(0,135,0)">len</span>(array)<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">    542</span>         )
-<span class="ansi-green-intense-fg ansi-bold">    543</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> is_integer_dtype(dtype):
-<span class="ansi-green-intense-fg ansi-bold">    544</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-
-<span class="ansi-red-fg">IndexError</span>: Boolean index has wrong length: 1694 instead of 1693</pre>
-</div>
-</div>
-</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
