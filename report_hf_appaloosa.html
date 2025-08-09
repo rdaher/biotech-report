@@ -15899,7 +15899,7 @@ Unchanged: $CZR, $MPLX
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-End of Report - 2025-08-09 15:22:02
+End of Report - 2025-08-09 15:32:07
 </pre>
 </div>
 </div>
@@ -15925,24 +15925,7 @@ End of Report - 2025-08-09 15:22:02
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[5], line 8</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">time</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span> <span style="color: rgb(95,135,135)"># Paths</span>
-<span class="ansi-green-fg">----&gt; 8</span> netlify_url <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">https://marketanalytics.netlify.app/</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span><span class="ansi-yellow-bg">html_file</span><span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">.html</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span> <span style="color: rgb(0,135,0)">print</span>(netlify_url)
-<span class="ansi-green-intense-fg ansi-bold">     11</span> <span style="color: rgb(95,135,135)"># Function to run shell commands</span>
 
-<span class="ansi-red-fg">NameError</span>: name 'html_file' is not defined</pre>
-</div>
-</div>
-</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15956,16 +15939,13 @@ Cell <span class="ansi-green-fg">In[5], line 8</span>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[6], line 67</span>
-<span class="ansi-green-intense-fg ansi-bold">     64</span>                 page_response <span style="color: rgb(98,98,98)">=</span> requests<span style="color: rgb(98,98,98)">.</span>post(page_url, headers<span style="color: rgb(98,98,98)">=</span>{<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Authorization</span><span style="color: rgb(175,0,0)">"</span>: <span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Basic </span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>credentials<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">"</span>, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Content-Type</span><span style="color: rgb(175,0,0)">"</span>: <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">application/json</span><span style="color: rgb(175,0,0)">"</span>}, json<span style="color: rgb(98,98,98)">=</span>page_data)
-<span class="ansi-green-intense-fg ansi-bold">     65</span>                 <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Page update: </span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>page_response<span style="color: rgb(98,98,98)">.</span>status_code<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-fg">---&gt; 67</span> smart_upload_fixed(<span class="ansi-yellow-bg">html_file_path</span>, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">151</span><span style="color: rgb(175,0,0)">"</span>)
-
-<span class="ansi-red-fg">NameError</span>: name 'html_file_path' is not defined</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Looking for existing files with name: report_hf_appaloosa
+Found 0 existing files
+File size: 664886 characters
+Uploading directly to page content...
+Direct upload status: 200
+</pre>
 </div>
 </div>
 </div>
