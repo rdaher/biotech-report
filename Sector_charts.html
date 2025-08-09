@@ -14592,6 +14592,158 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+File <span class="ansi-green-fg">~/Biotech/DefinitionsTechnicals.py:19</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">yfinance</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">yf</span>
+<span class="ansi-green-intense-fg ansi-bold">     18</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">numba</span>
+<span class="ansi-green-fg">---&gt; 19</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">stats</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> linregress
+<span class="ansi-green-intense-fg ansi-bold">     20</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">plotly</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">graph_objects</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">go</span>
+<span class="ansi-green-intense-fg ansi-bold">     21</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">plotly</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">subplots</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> make_subplots
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/stats/__init__.py:605</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(175,0,0)">.. _statsrefmanual:</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> 
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    600</span> 
+<span class="ansi-green-intense-fg ansi-bold">    601</span> <span style="color: rgb(175,0,0)">"""</span>  <span style="color: rgb(95,135,135)"># noqa: E501</span>
+<span class="ansi-green-intense-fg ansi-bold">    603</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_warnings_errors</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> (ConstantInputWarning, NearConstantInputWarning,
+<span class="ansi-green-intense-fg ansi-bold">    604</span>                                DegenerateDataWarning, FitError)
+<span class="ansi-green-fg">--&gt; 605</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_stats_py</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">    606</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_variation</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> variation
+<span class="ansi-green-intense-fg ansi-bold">    607</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">distributions</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/stats/_stats_py.py:37</span>
+<span class="ansi-green-intense-fg ansi-bold">     34</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">numpy</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">np</span>
+<span class="ansi-green-intense-fg ansi-bold">     35</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">numpy</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> array, asarray, ma
+<span class="ansi-green-fg">---&gt; 37</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">spatial</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">distance</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> cdist
+<span class="ansi-green-intense-fg ansi-bold">     38</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">ndimage</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> _measurements
+<span class="ansi-green-intense-fg ansi-bold">     39</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_lib</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_util</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> (check_random_state, MapWrapper, _get_nan,
+<span class="ansi-green-intense-fg ansi-bold">     40</span>                               rng_integers, _rename_parameter, _contains_nan,
+<span class="ansi-green-intense-fg ansi-bold">     41</span>                               AxisError)
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/spatial/__init__.py:110</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(175,0,0)">=============================================================</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(175,0,0)">Spatial algorithms and data structures (:mod:`scipy.spatial`)</span>
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    107</span> <span style="color: rgb(175,0,0)">   QhullError</span>
+<span class="ansi-green-intense-fg ansi-bold">    108</span> <span style="color: rgb(175,0,0)">"""</span>  <span style="color: rgb(95,135,135)"># noqa: E501</span>
+<span class="ansi-green-fg">--&gt; 110</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_kdtree</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">    111</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_ckdtree</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">    112</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_qhull</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/spatial/_kdtree.py:4</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(95,135,135)"># Copyright Anne M. Archibald 2008</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(95,135,135)"># Released under the scipy license</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">numpy</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">np</span>
+<span class="ansi-green-fg">----&gt; 4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_ckdtree</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> cKDTree, cKDTreeNode
+<span class="ansi-green-intense-fg ansi-bold">      6</span> __all__ <span style="color: rgb(98,98,98)">=</span> [<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">minkowski_distance_p</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">minkowski_distance</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">      7</span>            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">distance_matrix</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">      8</span>            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Rectangle</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">KDTree</span><span style="color: rgb(175,0,0)">'</span>]
+<span class="ansi-green-intense-fg ansi-bold">     11</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">minkowski_distance_p</span>(x, y, p<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">2</span>):
+
+File <span class="ansi-green-fg">_ckdtree.pyx:11</span>, in <span class="ansi-cyan-fg">init scipy.spatial._ckdtree</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/sparse/__init__.py:308</span>
+<span class="ansi-green-intense-fg ansi-bold">    305</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_matrix_io</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">    307</span> <span style="color: rgb(95,135,135)"># For backward compatibility with v0.19.</span>
+<span class="ansi-green-fg">--&gt; 308</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> csgraph
+<span class="ansi-green-intense-fg ansi-bold">    310</span> <span style="color: rgb(95,135,135)"># Deprecated namespaces, to be removed in v2.0.0</span>
+<span class="ansi-green-intense-fg ansi-bold">    311</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> (
+<span class="ansi-green-intense-fg ansi-bold">    312</span>     base, bsr, compressed, construct, coo, csc, csr, data, dia, dok, extract,
+<span class="ansi-green-intense-fg ansi-bold">    313</span>     lil, sparsetools, sputils
+<span class="ansi-green-intense-fg ansi-bold">    314</span> )
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/sparse/csgraph/__init__.py:185</span>
+<span class="ansi-green-intense-fg ansi-bold">    157</span> __docformat__ <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">restructuredtext en</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-intense-fg ansi-bold">    159</span> __all__ <span style="color: rgb(98,98,98)">=</span> [<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">connected_components</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">    160</span>            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">laplacian</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">    161</span>            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">shortest_path</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    182</span>            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">csgraph_to_masked</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">    183</span>            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">NegativeCycleError</span><span style="color: rgb(175,0,0)">'</span>]
+<span class="ansi-green-fg">--&gt; 185</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_laplacian</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> laplacian
+<span class="ansi-green-intense-fg ansi-bold">    186</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_shortest_path</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> (
+<span class="ansi-green-intense-fg ansi-bold">    187</span>     shortest_path, floyd_warshall, dijkstra, bellman_ford, johnson,
+<span class="ansi-green-intense-fg ansi-bold">    188</span>     NegativeCycleError
+<span class="ansi-green-intense-fg ansi-bold">    189</span> )
+<span class="ansi-green-intense-fg ansi-bold">    190</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_traversal</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> (
+<span class="ansi-green-intense-fg ansi-bold">    191</span>     breadth_first_order, depth_first_order, breadth_first_tree,
+<span class="ansi-green-intense-fg ansi-bold">    192</span>     depth_first_tree, connected_components
+<span class="ansi-green-intense-fg ansi-bold">    193</span> )
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/sparse/csgraph/_laplacian.py:7</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">numpy</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">np</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">sparse</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> issparse
+<span class="ansi-green-fg">----&gt; 7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">sparse</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">linalg</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> LinearOperator
+<span class="ansi-green-intense-fg ansi-bold">     10</span> <span style="color: rgb(95,135,135)">###############################################################################</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span> <span style="color: rgb(95,135,135)"># Graph laplacian</span>
+<span class="ansi-green-intense-fg ansi-bold">     12</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">laplacian</span>(
+<span class="ansi-green-intense-fg ansi-bold">     13</span>     csgraph,
+<span class="ansi-green-intense-fg ansi-bold">     14</span>     normed<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     21</span>     symmetrized<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
+<span class="ansi-green-intense-fg ansi-bold">     22</span> ):
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/sparse/linalg/__init__.py:129</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(175,0,0)">Sparse linear algebra (:mod:`scipy.sparse.linalg`)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(175,0,0)">==================================================</span>
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    126</span> 
+<span class="ansi-green-intense-fg ansi-bold">    127</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-fg">--&gt; 129</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_isolve</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">    130</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_dsolve</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">    131</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_interface</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/sparse/linalg/_isolve/__init__.py:4</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Iterative Solvers for Sparse Linear Systems</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(95,135,135)">#from info import __doc__</span>
+<span class="ansi-green-fg">----&gt; 4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">iterative</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">minres</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> minres
+<span class="ansi-green-intense-fg ansi-bold">      6</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">lgmres</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> lgmres
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/sparse/linalg/_isolve/iterative.py:5</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">sparse</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">linalg</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_interface</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> LinearOperator
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">utils</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> make_system
+<span class="ansi-green-fg">----&gt; 5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">linalg</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> get_lapack_funcs
+<span class="ansi-green-intense-fg ansi-bold">      6</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_lib</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">deprecation</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> _NoValue, _deprecate_positional_args
+<span class="ansi-green-intense-fg ansi-bold">      8</span> __all__ <span style="color: rgb(98,98,98)">=</span> [<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">bicg</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">bicgstab</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">cg</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">cgs</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">gmres</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">qmr</span><span style="color: rgb(175,0,0)">'</span>]
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/linalg/__init__.py:206</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(175,0,0)">====================================</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(175,0,0)">Linear algebra (:mod:`scipy.linalg`)</span>
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    203</span> 
+<span class="ansi-green-intense-fg ansi-bold">    204</span> <span style="color: rgb(175,0,0)">"""</span>  <span style="color: rgb(95,135,135)"># noqa: E501</span>
+<span class="ansi-green-fg">--&gt; 206</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_misc</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">    207</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_cythonized_array_utils</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+<span class="ansi-green-intense-fg ansi-bold">    208</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">_basic</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span style="color: rgb(98,98,98)">*</span>
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/linalg/_misc.py:3</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">numpy</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">np</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">numpy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">linalg</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> LinAlgError
+<span class="ansi-green-fg">----&gt; 3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">blas</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> get_blas_funcs
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">lapack</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> get_lapack_funcs
+<span class="ansi-green-intense-fg ansi-bold">      6</span> __all__ <span style="color: rgb(98,98,98)">=</span> [<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">LinAlgError</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">LinAlgWarning</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">norm</span><span style="color: rgb(175,0,0)">'</span>]
+
+File <span class="ansi-green-fg">~/Biotech/venv/lib/python3.11/site-packages/scipy/linalg/blas.py:213</span>
+<span class="ansi-green-intense-fg ansi-bold">    210</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">numpy</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">_np</span>
+<span class="ansi-green-intense-fg ansi-bold">    211</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">functools</span>
+<span class="ansi-green-fg">--&gt; 213</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">linalg</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> _fblas
+<span class="ansi-green-intense-fg ansi-bold">    214</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
+<span class="ansi-green-intense-fg ansi-bold">    215</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">scipy</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">linalg</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> _cblas
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html">
 <style>.container { width:100% !important; }</style>
 </div>
@@ -14606,7 +14758,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html">
-<div style="text-align: center;"><font size="7">US Sectors Charts (Equal weighted) for August 08, 2025</font></div>
+<div style="text-align: center;"><font size="7">US Sectors Charts (Equal weighted) for August 11, 2025</font></div>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -15591,7 +15743,7 @@ Worst drawdown bottom date in the past 6 months: 2025-04-08
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-End of Report - 2025-08-08 05:02:00
+End of Report - 2025-08-09 02:38:41
 </pre>
 </div>
 </div>
